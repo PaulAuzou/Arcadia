@@ -93,3 +93,60 @@ function showAndHideElementsForRoles(){
         }
     });
 }
+
+// Sélectionner toutes les étoiles
+const stars = document.querySelectorAll('#starRating i');
+const ratingInput = document.getElementById('rating');
+
+// Ajouter l'événement de survol des étoiles pour changer leur couleur
+stars.forEach(star => {
+  star.addEventListener('mouseover', () => {
+    const value = star.getAttribute('data-value');
+    highlightStars(value);
+  });
+
+  star.addEventListener('mouseout', () => {
+    const value = ratingInput.value;
+    highlightStars(value);
+  });
+
+  star.addEventListener('click', () => {
+    const value = star.getAttribute('data-value');
+    ratingInput.value = value;
+    highlightStars(value);
+  });
+});
+
+// Fonction pour surligner les étoiles selon la note choisie
+function highlightStars(value) {
+  stars.forEach(star => {
+    if (star.getAttribute('data-value') <= value) {
+      star.style.color = '#f39c12'; // Couleur dorée pour les étoiles sélectionnées
+    } else {
+      star.style.color = '#ccc'; // Couleur grise pour les étoiles non sélectionnées
+    }
+  });
+}
+
+// Gérer la soumission du formulaire
+document.getElementById('reviewForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  // Récupérer les valeurs
+  const rating = ratingInput.value;
+  const comment = document.getElementById('comment').value;
+
+  // Vérifier que le formulaire est correctement rempli
+  if (rating == 0 || comment.trim() === '') {
+    alert("Veuillez remplir tous les champs.");
+    return;
+  }
+
+  // Afficher un message de confirmation
+  alert(`Merci pour votre avis !\nNote: ${rating} étoiles\nCommentaire: ${comment}`);
+
+  // Réinitialiser le formulaire
+  document.getElementById('reviewForm').reset();
+  ratingInput.value = 0;
+  highlightStars(0);
+});

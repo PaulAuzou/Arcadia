@@ -1,64 +1,112 @@
-<div class="hero-scene text-center text-white">
-    <div class="hero-scene-content">
-        <p>Le chef Arnaud Michant vous invite au</p>
-        <h1>Quai Antique</h1>
-        <button class="btn btn-primary">Réserver</button>
+<div class="hero-scene">
+  <div id="carousel" class="carousel" data-bs-ride="carousel">
+    <div class="carousel-hero">
+      <h1>
+        Chaque rencontre avec la nature est un pas vers un avenir plus vert
+      </h1>
+      <p>
+        Découvrez un zoo engagé pour la biodiversité et la préservation de notre
+        planète
+      </p>
+      <div>
+        <a href="/pages/habitats.html" class="btn-carousel"
+          >Découvrez leurs Habitats</a
+        >
+      </div>
     </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div>
+          <img src="/Images/EEG.png" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/Images/Flamand Rose - Copie.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+      </div>
+      <div class="carousel-item">
+        <img src="/Images/Singe.jpg" class="d-block w-100" alt="..." />
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carousel"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carousel"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 </div>
 
-<article>
-    <div class="container p-4">
-        <h2 class="text-center text-primary">Bienvenue au quai Antique</h2>
-        <div class="row row-cols-2 align-items-center">
-            <div class="col">
-                <p class="text-justify">
-                    Bienvenue sur le site de notre restaurant gastronomique situé au cœur de la magnifique ville de Chambéry. Le chef Arnaut Michant vous invite à découvrir un voyage culinaire mémorable.
-                </p>
-            </div>
-            <div class="col">
-                <img class="w-100 rounded" src="../Images/gastronomy-2853387_1280.jpg"/>
-            </div>
-        </div>
-        <div class="text-center pt-4">
-            <a href="/carte" class="btn btn-primary">Nos menus</a>
-        </div>
+<div class="container">
+  <div class="bg-white shadow-lg rounded-3 p-4">
+    <!-- Booking Form -->
+    <div class="row mt-3">
+      <div class="col-md-4">
+        <label class="form-label fw-semibold">ARRIVÉE</label>
+        <input type="date" class="form-control" />
+      </div>
+      <div class="col-md-4">
+        <label class="form-label fw-semibold">VISITE</label>
+        <select class="form-select">
+          <option>Matin</option>
+          <option>Après-mdi</option>
+          <option>Journée</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <label class="form-label fw-semibold">NOMBRE DE PERSONNES</label>
+        <select class="form-select">
+          <option>1 personne</option>
+          <option selected>2 personnes</option>
+          <option>3 personnes</option>
+          <option>4 personnes</option>
+        </select>
+      </div>
     </div>
-</article>
 
-<article class="bg-black text-white">
-    <div class="container p-4">
-        <h2 class="text-center text-primary">Des produits frais</h2>
-        <div class="row row-cols-2 align-items-center">
-            <div class="col">
-                <img class="w-100 rounded" src="../Images/tomatoes-1867744_1280.jpg"/>
-            </div>
-            <div class="col">
-                <p class="text-justify">
-                    Découvrez la richesse des saveurs avec nos plats élaborés à partir de produits frais et de saison, cueillis localement.
-                </p>
-            </div>
-        </div>
-        <div class="text-center pt-4">
-            <a href="/galerie" class="btn btn-primary">Voir la galerie</a>
-        </div>
+    <!-- Search Button -->
+    <div class="d-flex justify-content-between align-items-center mt-4">
+      <button class="btn btn-warning fw-semibold px-4">Rechercher →</button>
     </div>
-</article>
+  </div>
+</div>
 
-<article>
-    <div class="container p-4">
-        <h2 class="text-center text-primary">Réservation en ligne</h2>
-        <div class="row row-cols-2 align-items-center">
-            <div class="col">
-                <p class="text-justify">
-                    Une table vous attend...
-                </p>
-            </div>
-            <div class="col">
-                <img class="w-100 rounded" src="../Images/suckling-pig-727974_1280.jpg"/>
-            </div>
-        </div>
-        <div class="text-center pt-4">
-            <a href="/reserver" class="btn btn-primary">Réserver</a>
-        </div>
+<div class="background-article">
+  <section class="article-section">
+    <div class="content">
+      <img
+        class="zoo-logo"
+        src="/Images/output-onlinepngtools (3).png"
+        alt="Zoo Logo"
+      />
+      <article class="article">
+        <h1>
+          Une expérience unique axée sur la préservation de la nature et la
+          sensibilisation à l'écologie
+        </h1>
+        <p>
+          En plus de ses espaces dédiés à la faune locale et mondiale, ARCADIA
+          propose des visites guidées éducatives, des programmes de conservation
+          en collaboration avec des experts internationaux, ainsi que des
+          ateliers interactifs pour petits et grands.
+        </p>
+        <a class="cta-button" href="#">Nos Services</a>
+      </article>
     </div>
-</article>
+  </section>
+</div>

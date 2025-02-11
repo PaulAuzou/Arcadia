@@ -1,80 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="scss/main.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <title>Document</title>
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Hind+Madurai:wght@300;400;500;600;700&family=Magra:wght@400;700&family=Martian+Mono:wght@100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="scss/main.css" />
+
+    <title>ARCADIA</title>
+  </head>
+  <body>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <header>
-        <header>
-            <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-                <div class="container-fluid">
-                <a class="navbar-brand" href="/">Quai Antique</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/galerie">Galerie</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/carte">La carte</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/allResa">Les réservations</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/account">Mon compte</a>
-                        </li>
-                        <li class="nav-item" data-show="disconnected">
-                            <a class="nav-link" href="/signin">Connexion</a>
-                        </li>
-                        <li class="nav-item" data-show="connected">
-                            <button class="nav-link" id="signout-btn">Deconnexion</button>
-                        </li>
-                    </ul>
-                </div>
-                </div>
-            </nav>
-        </header>
-    </header>    
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <!-- Logo -->
+
+      <a class="navbar-brand" href="#">
+        <img
+          src="Images/output-onlinepngtools (3).png"
+          alt="Logo"
+          width="50"
+          height="50"
+        />
+      </a>
+
+      <!-- Toggler for mobile -->
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar -->
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Les Animaux</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/habitats">Leurs Habitats</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nos Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Notre Engagement</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Réservez</a>
+          </li>
+        </ul>
+
+        <!-- Login icon -->
+
+        <a href="#" class="ml-auto">
+          <img src="Images/pngegg.png" alt="Login" class="login-icon" />
+        </a>
+      </div>
+    </nav>
+
     <main id="main-page">
-        <!-- Le contenu de la page sera injecté ici -->
+      <!-- Le contenu de la page sera injecté ici -->
     </main>
 
-    <footer class="bg-dark text-white text-center footer">
+    <!-- Section d'ajout d'avis -->
+    <div class="container review-section">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="review-title">Laissez un avis sur notre Zoo</h2>
+
+          <!-- Formulaire d'avis -->
+          <form id="reviewForm">
+            <!-- Choix de la note par étoiles -->
+            <div class="form-group">
+              <label for="rating">Note (de 1 à 5 étoiles)</label>
+              <div class="stars" id="starRating">
+                <i class="fas fa-star" data-value="1"></i>
+                <i class="fas fa-star" data-value="2"></i>
+                <i class="fas fa-star" data-value="3"></i>
+                <i class="fas fa-star" data-value="4"></i>
+                <i class="fas fa-star" data-value="5"></i>
+              </div>
+              <input type="hidden" id="rating" name="rating" value="0" />
+            </div>
+
+            <!-- Champ de commentaire -->
+            <div class="form-group">
+              <label for="comment">Votre avis</label>
+              <textarea
+                class="form-control"
+                id="comment"
+                name="comment"
+                rows="4"
+                placeholder="Écrivez votre avis ici..."
+                required
+              ></textarea>
+            </div>
+
+            <!-- Bouton de soumission -->
+            <button type="submit" class="submit-btn">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center text-lg-start">
+      <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-4">
-                <h3 class="text-primary">Nos horaires</h3>
-                <p>Du mardi au dimanche  12:00-14:00  18:00-23:00</p>
-            </div>
-            <div class="col-6 col-lg-4">
-                <p>Quai Antique <br/>
-                    1 Quai de la République <br/>
-                    69002 Lyon <br/>
-                    04 78 37 23 23 <br/>
-                </p> 
-            </div>
-            <div class="col-6 col-lg-4">
-                <p>contact@quaiantique.com</p>
-            </div>
+          <!-- Section 1: Horaires d'ouverture -->
+          <div class="col-md-4 footer-section">
+            <h5 class="footer-title">Horaires d'ouverture</h5>
+            <ul class="list-unstyled">
+              <li class="footer-item">Lundi - Vendredi : 9h00 - 18h00</li>
+              <li class="footer-item">Samedi - Dimanche : 10h00 - 19h00</li>
+              <li class="footer-item">Jours fériés : 10h00 - 18h00</li>
+            </ul>
+          </div>
+
+          <!-- Section 2: Informations sur le Zoo -->
+          <div class="col-md-4 footer-section">
+            <h5 class="footer-title">ARCADIA</h5>
+            <p class="footer-item">65 Route de Brocéliande, 35380 Paimpont</p>
+          </div>
+
+          <!-- Section 3: Avis clients vérifiés -->
+          <div class="col-md-4 footer-section">
+            <h5 class="footer-title">Avis clients vérifiés</h5>
+            <p class="footer-item">⭐⭐⭐⭐⭐</p>
+            <p class="footer-item">
+              "Une expérience incroyable! Le zoo est très bien entretenu et les
+              animaux sont magnifiques." - Laura Palmer
+            </p>
+            <p class="footer-item">
+              "Visite fascinante, idéal pour les enfants!" - Dale Cooper
+            </p>
+          </div>
         </div>
 
+        <!-- Section des réseaux sociaux -->
+        <div class="social-icons">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-google"></i>
+        </div>
+      </div>
+
+      <!-- Section des Mentions Légales -->
+      <div class="legal-link">
+        <p><a href="#">Mentions légales</a></p>
+      </div>
     </footer>
+
     <script src="js/script.js"></script>
     <script type="module" src="./Router/router.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 </html>
