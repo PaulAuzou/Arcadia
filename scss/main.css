@@ -12050,7 +12050,7 @@ html {
 }
 
 .submit-btn {
-  background-color: #251F47;
+  background-color: #251f47;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -12060,7 +12060,7 @@ html {
 }
 
 .submit-btn:hover {
-  background-color: #251F47;
+  background-color: #251f47;
 }
 
 /* Responsivité */
@@ -12070,7 +12070,7 @@ html {
   }
 }
 footer {
-  background-color: #251F47;
+  background-color: #251f47;
   color: rgb(255, 255, 255);
   padding: 20px 0;
 }
@@ -12112,7 +12112,7 @@ footer {
 }
 
 .legal-link a {
-  color: #38A3A5;
+  color: #38a3a5;
   font-weight: bold;
 }
 
@@ -12167,7 +12167,7 @@ footer {
 
 /* Styling for the button */
 .btn-container .btn {
-  background-color: #38A3A5;
+  background-color: #38a3a5;
   color: rgb(0, 0, 0);
   padding: 10px 20px;
   border-radius: 10px;
@@ -12189,7 +12189,7 @@ footer {
 }
 /* Styling for the content container to make it stand out from the background */
 .content-container {
-  padding: 20px;
+  padding: 50px;
   border-radius: 10px;
 }
 
@@ -12274,7 +12274,7 @@ p {
 }
 .carousel .btn-carousel {
   position: absolute;
-  background-color: #38A3A5;
+  background-color: #38a3a5;
   color: rgba(26, 22, 50, 0.5568627451);
   border: none;
   padding: 10px 20px;
@@ -12290,7 +12290,7 @@ p {
 
 /* Reservation Container */
 .reservation-box {
-  background: #C7F9CC;
+  background: #c7f9cc;
   border-radius: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -12361,7 +12361,7 @@ p {
   align-items: center;
   height: 90vh;
   background: url("background-image.jpg") no-repeat center center/cover;
-  padding: 20px;
+  padding: 50px;
 }
 
 .content {
@@ -12376,7 +12376,8 @@ p {
 .zoo-logo {
   position: absolute;
   top: -20px;
-  left: 200px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100px;
 }
 
@@ -12397,7 +12398,7 @@ p {
 
 .cta-button {
   display: inline-block;
-  background-color: #38A3A5;
+  background-color: #38a3a5;
   color: rgba(37, 31, 71, 0.5490196078);
   padding: 10px 20px;
   text-decoration: none;
@@ -12407,7 +12408,7 @@ p {
 }
 
 .cta-button:hover {
-  color: #251F47;
+  color: #251f47;
   text-decoration: none;
 }
 
