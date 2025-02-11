@@ -12558,4 +12558,41 @@ p {
     -webkit-clip-path: circle(50% at center);
             clip-path: circle(50% at center);
   }
+}
+.custom-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.custom-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Image en haut des cartes */
+.custom-card img {
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Titre stylisé */
+.custom-card h5, .custom-card .h5 {
+  font-weight: bold;
+  color: #1a3e59;
+}
+
+/* Texte */
+.custom-card p {
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .custom-card img {
+    height: 200px;
+  }
 }/*# sourceMappingURL=main.css.map */
