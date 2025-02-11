@@ -15,14 +15,21 @@ export const allRoutes = [
     "Les Animaux",
     "/pages/animaux.html",
     [],
-    "/js/habitats.js"
+    "/js/animaux.js"
   ),
   new Route(
     "/services",
     "Nos Services",
     "/pages/services.html",
     [],
-    "/js/habitats.js"
+    "/js/services.js"
+  ),
+  new Route(
+    "/engagement",
+    "Notre Engagement",
+    "/pages/engagement.html",
+    [],
+    "/js/engagement.js"
   ),
   new Route(
     "/signin",
