@@ -26,7 +26,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
       <!-- Logo -->
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/home">
         <img
           src="Images/output-onlinepngtools (3).png"
           alt="Logo"
@@ -52,10 +52,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Les Animaux</a>
+            <a class="nav-link" href="/animaux">Les Animaux</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/pages/habitats">Leurs Habitats</a>
+            <a class="nav-link" href="/habitats">Leurs Habitats</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Nos Services</a>
@@ -79,47 +79,6 @@
     <main id="main-page">
       <!-- Le contenu de la page sera injecté ici -->
     </main>
-
-    <!-- Section d'ajout d'avis -->
-    <div class="container review-section">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="review-title">Laissez un avis sur notre Zoo</h2>
-
-          <!-- Formulaire d'avis -->
-          <form id="reviewForm">
-            <!-- Choix de la note par étoiles -->
-            <div class="form-group">
-              <label for="rating">Note (de 1 à 5 étoiles)</label>
-              <div class="stars" id="starRating">
-                <i class="fas fa-star" data-value="1"></i>
-                <i class="fas fa-star" data-value="2"></i>
-                <i class="fas fa-star" data-value="3"></i>
-                <i class="fas fa-star" data-value="4"></i>
-                <i class="fas fa-star" data-value="5"></i>
-              </div>
-              <input type="hidden" id="rating" name="rating" value="0" />
-            </div>
-
-            <!-- Champ de commentaire -->
-            <div class="form-group">
-              <label for="comment">Votre avis</label>
-              <textarea
-                class="form-control"
-                id="comment"
-                name="comment"
-                rows="4"
-                placeholder="Écrivez votre avis ici..."
-                required
-              ></textarea>
-            </div>
-
-            <!-- Bouton de soumission -->
-            <button type="submit" class="submit-btn">Envoyer</button>
-          </form>
-        </div>
-      </div>
-    </div>
 
     <footer class="text-center text-lg-start">
       <div class="container">

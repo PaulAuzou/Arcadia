@@ -10,7 +10,7 @@
       </p>
       <div>
         <a href="/pages/habitats.html" class="btn-carousel"
-          >Découvrez leurs Habitats</a
+          >Découvrez les animaux</a
         >
       </div>
     </div>
@@ -105,8 +105,49 @@
           en collaboration avec des experts internationaux, ainsi que des
           ateliers interactifs pour petits et grands.
         </p>
-        <a class="cta-button" href="#">Nos Services</a>
+        <a class="cta-button" href="#">Notre Engagement</a>
       </article>
     </div>
   </section>
+</div>
+
+<!-- Section d'ajout d'avis -->
+<div class="container review-section">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="review-title">Laissez un avis sur notre Zoo</h2>
+
+      <!-- Formulaire d'avis -->
+      <form id="reviewForm">
+        <!-- Choix de la note par étoiles -->
+        <div class="form-group">
+          <label for="rating">Note (de 1 à 5 étoiles)</label>
+          <div class="stars" id="starRating">
+            <i class="fas fa-star" data-value="1"></i>
+            <i class="fas fa-star" data-value="2"></i>
+            <i class="fas fa-star" data-value="3"></i>
+            <i class="fas fa-star" data-value="4"></i>
+            <i class="fas fa-star" data-value="5"></i>
+          </div>
+          <input type="hidden" id="rating" name="rating" value="0" />
+        </div>
+
+        <!-- Champ de commentaire -->
+        <div class="form-group">
+          <label for="comment">Votre avis</label>
+          <textarea
+            class="form-control"
+            id="comment"
+            name="comment"
+            rows="4"
+            placeholder="Écrivez votre avis ici..."
+            required
+          ></textarea>
+        </div>
+
+        <!-- Bouton de soumission -->
+        <button type="submit" class="submit-btn">Envoyer</button>
+      </form>
+    </div>
+  </div>
 </div>
