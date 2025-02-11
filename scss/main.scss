@@ -236,7 +236,7 @@ footer {
 }
 
 main {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 p {
@@ -542,4 +542,8 @@ p {
     height: 50vh;
     clip-path: circle(50% at center);
   }
+}
+
+.text-center {
+  margin-top: 15px;
 }
