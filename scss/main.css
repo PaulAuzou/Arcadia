@@ -12193,7 +12193,7 @@ footer {
 }
 
 main {
-  margin-bottom: 270px;
+  margin-bottom: 100px;
 }
 
 p {
@@ -12418,4 +12418,34 @@ p {
   height: 100vh;
   background: url("/Images/tiger-3424791_1280.jpg") no-repeat center center/cover;
   padding: 20px;
+}
+
+.habitat-card {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  background-color: #c7f9cc;
+}
+
+.savane {
+  background: url("/Images/prague-4484518_1920.jpg") no-repeat center/cover;
+}
+
+.jungle {
+  background: url("/Images/monkey-7394077_1280.jpg") no-repeat center/cover;
+}
+
+.marais {
+  background: url("/Images/bayou-439881_1280.jpg") no-repeat center/cover;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container-habitats {
+  background-color: #c7f9cc;
 }/*# sourceMappingURL=main.css.map */
