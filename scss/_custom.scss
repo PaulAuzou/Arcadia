@@ -3,13 +3,13 @@
 
 // Include any default variable overrides (though functions won't be available)
 
-$primary: #57CC99;
-$secondary: #C7F9CC;
-$tertiary: #80ED99;
-$dark: #38A3A5;
-$black: #251F47;
+$primary: #57cc99;
+$secondary: #c7f9cc;
+$tertiary: #80ed99;
+$dark: #38a3a5;
+$black: #251f47;
 
-$font-family-sans-serif: "Martian Mono", sans-serif !default; 
+$font-family-sans-serif: "Martian Mono", sans-serif !default;
 $font-family-serif: "Magra", serif !default;
 
 @import "../node_modules/bootstrap/scss/bootstrap";

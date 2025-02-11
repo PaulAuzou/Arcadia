@@ -196,7 +196,7 @@ footer {
 .article-image {
   max-width: 100%;
   height: auto;
-  flex-basis: 40%; /* Image takes up 40% of the container width */
+  flex-basis: 40%;
 }
 
 /* Button Container */
@@ -217,7 +217,7 @@ footer {
 /* Media query for small screens */
 @media (max-width: 768px) {
   .article-container {
-    flex-direction: column; /* Stack text and image vertically on smaller screens */
+    flex-direction: column;
   }
 
   .article-image {
@@ -230,7 +230,6 @@ footer {
   }
 }
 
-/* Styling for the content container to make it stand out from the background */
 .content-container {
   padding: 50px;
   border-radius: 10px;
@@ -467,7 +466,7 @@ p {
   justify-content: flex-end;
   align-items: center;
   height: 100vh;
-  background: url("/Images/leopards-1994499_1280.jpg") no-repeat center
+  background: url("/Images/tiger-3424791_1280.jpg") no-repeat center
     center/cover;
   padding: 20px;
 }
