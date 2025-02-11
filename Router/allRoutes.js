@@ -18,6 +18,13 @@ export const allRoutes = [
     "/js/habitats.js"
   ),
   new Route(
+    "/services",
+    "Nos Services",
+    "/pages/services.html",
+    [],
+    "/js/habitats.js"
+  ),
+  new Route(
     "/signin",
     "Connexion",
     "/pages/auth/signin.html",
