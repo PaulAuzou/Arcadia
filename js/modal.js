@@ -1,14 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const loginModal = new bootstrap.Modal(document.getElementById("loginModal"));
-  const openLoginBtn = document.getElementById("openLoginBtn");
   const roleButtons = document.querySelectorAll(".role-btn");
   const roleInput = document.getElementById("role");
   const loginForm = document.getElementById("loginForm");
-
-  // Ouvrir la pop-up
-  openLoginBtn.addEventListener("click", () => {
-    loginModal.show();
-  });
 
   // Sélectionner un rôle
   roleButtons.forEach((button) => {

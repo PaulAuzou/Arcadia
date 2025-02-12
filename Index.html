@@ -72,7 +72,13 @@
             <a class="nav-link" href="/reserver">Réservez</a>
           </li>
           <li class="nav-item">
-            <button class="btn btn-primary m-3" id="openLoginBtn">
+            <button
+              class="btn btn-primary m-3"
+              id="openLoginBtn"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+              type="button"
+            >
               🔑 Connexion
             </button>
           </li>
@@ -133,13 +139,7 @@
     </footer>
 
     <!-- Modal Bootstrap -->
-    <div
-      class="modal fade"
-      id="loginModal"
-      tabindex="-1"
-      aria-labelledby="loginModalLabel"
-      aria-hidden="true"
-    >
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">

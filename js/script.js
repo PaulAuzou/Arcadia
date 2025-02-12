@@ -2,8 +2,6 @@ const tokenCookieName = "accesstoken";
 const RoleCookieName = "role";
 const signoutBtn = document.getElementById("signout-btn");
 
-signoutBtn.addEventListener("click", signout);
-
 function getRole() {
   return getCookie(RoleCookieName);
 }
