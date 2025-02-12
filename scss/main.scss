@@ -41,19 +41,7 @@ html {
   right: 20px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .navbar-nav {
-    text-align: center;
-    width: 100%;
-  }
-
-  .navbar-toggler {
-    margin-left: auto;
-  }
-}
-
-/* Laisser un avis */
+/* AVIS */
 .review-section {
   background-color: #f8f9fa;
   padding: 30px 0;
@@ -101,13 +89,6 @@ html {
   background-color: #251f47;
 }
 
-/* Responsivité */
-@media (max-width: 768px) {
-  .review-section {
-    padding: 20px;
-  }
-}
-
 footer {
   background-color: #251f47;
   color: rgb(255, 255, 255);
@@ -136,12 +117,13 @@ footer {
 }
 
 .social-icons i {
-  color: rgb(255, 255, 255);
+  color: #38a3a5;
   margin: 0 10px;
 }
 
 .social-icons i:hover {
   color: #24486e;
+  cursor: pointer;
 }
 
 /* Mentions Légales */
@@ -157,13 +139,6 @@ footer {
 
 .legal-link a:hover {
   text-decoration: underline;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .footer-section {
-    text-align: center;
-  }
 }
 
 /* Articles */
@@ -212,22 +187,6 @@ footer {
   padding: 10px 20px;
   border-radius: 10px;
   text-decoration: none;
-}
-
-/* Media query for small screens */
-@media (max-width: 768px) {
-  .article-container {
-    flex-direction: column;
-  }
-
-  .article-image {
-    flex-basis: 100%;
-    margin-top: 15px;
-  }
-
-  .article-text {
-    padding-right: 0;
-  }
 }
 
 .content-container {
@@ -523,27 +482,6 @@ p {
   clip-path: circle(50% at center);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .hero-section {
-    flex-direction: column;
-    text-align: center;
-    padding: 5%;
-  }
-
-  .hero-text {
-    max-width: 100%;
-    font-size: 2rem;
-  }
-
-  .hero-image {
-    position: relative;
-    width: 80%;
-    height: 50vh;
-    clip-path: circle(50% at center);
-  }
-}
-
 .text-center {
   margin-top: 15px;
 }
@@ -588,27 +526,6 @@ p {
   clip-path: circle(50% at center);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .hero-section-services {
-    flex-direction: column;
-    text-align: center;
-    padding: 5%;
-  }
-
-  .hero-text-services {
-    max-width: 100%;
-    font-size: 2rem;
-  }
-
-  .hero-image-services {
-    position: relative;
-    width: 80%;
-    height: 50vh;
-    clip-path: circle(50% at center);
-  }
-}
-
 .custom-card {
   border: none;
   border-radius: 15px;
@@ -639,9 +556,147 @@ p {
   color: #555;
 }
 
+/* Engagement */
+
+.background-engagement-container {
+  background: url("/Images/leaf-4558445.jpg") no-repeat center center/cover;
+  padding: 50px 0;
+}
+
+.hero-engagement {
+  color: #ffffff;
+  background: rgba(33, 33, 33, 0.534);
+  text-align: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.card-engagement {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card-engagement:hover {
+  transform: scale(1.05);
+}
+
+.card-engagement img {
+  border-radius: 10px 10px 0 0;
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary);
+}
+
+/* Page Reservation */
+
+.hero-reservation {
+  background-image: url("/Images/lemurs-1010643.jpg");
+  background-size: cover;
+  background-position-y: -150px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 150px;
+}
+
+.form-container {
+  background: #251f472d;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.13);
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar-toggler {
+    margin-left: auto;
+  }
+
+  .review-section {
+    padding: 20px;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .article-container {
+    flex-direction: column;
+  }
+
+  .article-image {
+    flex-basis: 100%;
+    margin-top: 15px;
+  }
+
+  .article-text {
+    padding-right: 0;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 5%;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    font-size: 2rem;
+  }
+
+  .hero-image {
+    position: relative;
+    width: 80%;
+    height: 50vh;
+    clip-path: circle(50% at center);
+  }
+  .hero-section-services {
+    flex-direction: column;
+    text-align: center;
+    padding: 5%;
+  }
+
+  .hero-text-services {
+    max-width: 100%;
+    font-size: 2rem;
+  }
+
+  .hero-image-services {
+    position: relative;
+    width: 80%;
+    height: 50vh;
+    clip-path: circle(50% at center);
+  }
+
   .custom-card img {
     height: 200px;
+  }
+
+  .hero-reservation {
+    padding: 40px 15px;
+  }
+  .form-container {
+    padding: 20px;
   }
 }

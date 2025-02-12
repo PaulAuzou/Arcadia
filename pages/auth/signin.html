@@ -1,27 +1,67 @@
-<div class="hero-scene text-center text-white">
-    <div class="hero-scene-content">
-        <h1>Connexion</h1>
-    </div>
-</div>
+<button class="btn btn-primary m-3" id="openLoginBtn">🔑 Connexion</button>
 
-<div class="container">
-    <form>
-        <div class="mb-3">
-            <label for="EmailInput" class="form-label">Email</label>
-            <input type="email" class="form-control" id="EmailInput" placeholder="test@mail.fr" name="Email"> 
-            <div class="invalid-feedback">
-                Le mail et le mot de passe ne correspondent pas
-            </div>
+<div
+  class="modal fade"
+  id="loginModal"
+  tabindex="-1"
+  aria-labelledby="loginModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Connexion</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <!-- Choix du rôle -->
+        <div class="text-center mb-3">
+          <button
+            class="btn btn-outline-primary role-btn"
+            onclick="setRole('Admin')"
+          >
+            Administrateur
+          </button>
+          <button
+            class="btn btn-outline-success role-btn"
+            onclick="setRole('Employé')"
+          >
+            Employé
+          </button>
+          <button
+            class="btn btn-outline-warning role-btn"
+            onclick="setRole('Vétérinaire')"
+          >
+            Vétérinaire
+          </button>
         </div>
-        <div class="mb-3">
-            <label for="PasswordInput" class="form-label">Mot de passe</label>
-            <input type="password" class="form-control" id="PasswordInput" name="Password">
-        </div>
-        <div class="text-center">
-            <button type="button" class="btn btn-primary" id="btnSignin">Connexion</button>
-        </div>
-    </form>
-    <div class="text-center pt-3">
-        <a href="/signup">Vous n’avez pas de compte ? Inscrivez-vous ici !</a>
+
+        <!-- Formulaire de connexion -->
+        <form id="loginForm">
+          <input type="hidden" id="role" value="Employé" />
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Mot de passe</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary w-100">
+            Se connecter
+          </button>
+        </form>
+      </div>
     </div>
+  </div>
 </div>

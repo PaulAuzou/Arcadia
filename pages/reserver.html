@@ -1,0 +1,47 @@
+<div class="hero-reservation">
+  <h1>Réservez Votre Visite</h1>
+  <p>Planifiez votre aventure dès aujourd'hui</p>
+</div>
+
+<div class="bgform">
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6 form-container">
+        <h3 class="text-center">Formulaire de Réservation</h3>
+        <form id="reservationForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="name" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="date" class="form-label">Date de visite</label>
+            <input type="text" class="form-control" id="date" required />
+          </div>
+          <div class="mb-3">
+            <label for="timeSlot" class="form-label">Créneau de visite</label>
+            <select class="form-control" id="timeSlot" required>
+              <option value="Matin">Matin</option>
+              <option value="Après-midi">Après-midi</option>
+              <option value="Journée">Journée</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="tickets" class="form-label">Nombre de billets</label>
+            <input
+              type="number"
+              class="form-control"
+              id="tickets"
+              min="1"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Réserver</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

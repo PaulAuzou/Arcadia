@@ -68,11 +68,83 @@
           </li>
         </ul>
 
-        <!-- Login icon -->
+        <!-- Login button -->
 
-        <a href="#" class="ml-auto">
-          <img src="Images/pngegg.png" alt="Login" class="login-icon" />
-        </a>
+        <button class="btn btn-primary m-3" id="openLoginBtn">
+          🔑 Connexion
+        </button>
+        <div
+          class="modal fade"
+          id="loginModal"
+          tabindex="-1"
+          aria-labelledby="loginModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Connexion</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <!-- Choix du rôle -->
+                <div class="text-center mb-3">
+                  <button
+                    class="btn btn-outline-primary role-btn"
+                    onclick="setRole('Admin')"
+                  >
+                    Administrateur
+                  </button>
+                  <button
+                    class="btn btn-outline-success role-btn"
+                    onclick="setRole('Employé')"
+                  >
+                    Employé
+                  </button>
+                  <button
+                    class="btn btn-outline-warning role-btn"
+                    onclick="setRole('Vétérinaire')"
+                  >
+                    Vétérinaire
+                  </button>
+                </div>
+
+                <!-- Formulaire de connexion -->
+                <form id="loginForm">
+                  <input type="hidden" id="role" value="Employé" />
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label"
+                      >Mot de passe</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      required
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">
+                    Se connecter
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
 
@@ -85,7 +157,7 @@
         <div class="row">
           <!-- Section 1: Horaires d'ouverture -->
           <div class="col-md-4 footer-section">
-            <h5 class="footer-title">Horaires d'ouverture</h5>
+            <h5 class="footer-title text-dark">Horaires d'ouverture</h5>
             <ul class="list-unstyled">
               <li class="footer-item">Lundi - Vendredi : 9h00 - 18h00</li>
               <li class="footer-item">Samedi - Dimanche : 10h00 - 19h00</li>
@@ -95,13 +167,13 @@
 
           <!-- Section 2: Informations sur le Zoo -->
           <div class="col-md-4 footer-section">
-            <h5 class="footer-title">ARCADIA</h5>
+            <h5 class="footer-title text-dark">ARCADIA</h5>
             <p class="footer-item">65 Route de Brocéliande, 35380 Paimpont</p>
           </div>
 
           <!-- Section 3: Avis clients vérifiés -->
           <div class="col-md-4 footer-section">
-            <h5 class="footer-title">Avis clients vérifiés</h5>
+            <h5 class="footer-title text-dark">Avis clients vérifiés</h5>
             <p class="footer-item">⭐⭐⭐⭐⭐</p>
             <p class="footer-item">
               "Une expérience incroyable! Le zoo est très bien entretenu et les
