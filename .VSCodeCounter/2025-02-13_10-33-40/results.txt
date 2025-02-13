@@ -1,0 +1,60 @@
+Date : 2025-02-13 10:33:40
+Directory : c:\Env\Workspace\ARCADIA
+Total : 22 files,  13420 codes, 155 comments, 1224 blanks, all 14799 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| CSS        |          1 |     11,616 |         50 |        985 |     12,651 |
+| HTML       |          9 |        781 |         25 |         43 |        849 |
+| SCSS       |          2 |        577 |         31 |        113 |        721 |
+| JavaScript |          7 |        358 |         49 |         65 |        472 |
+| JSON       |          2 |         65 |          0 |          2 |         67 |
+| Markdown   |          1 |         23 |          0 |         16 |         39 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                     | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                        |         22 |     13,420 |        155 |      1,224 |     14,799 |
+| . (Files)                                                |          4 |        271 |         13 |         35 |        319 |
+| Router                                                   |          3 |        123 |         29 |         26 |        178 |
+| js                                                       |          4 |        235 |         20 |         39 |        294 |
+| js (Files)                                               |          2 |        140 |         16 |         25 |        181 |
+| js\auth                                                  |          2 |         95 |          4 |         14 |        113 |
+| pages                                                    |          8 |        598 |         12 |         26 |        636 |
+| pages (Files)                                            |          7 |        576 |         12 |         24 |        612 |
+| pages\reservations                                       |          1 |         22 |          0 |          2 |         24 |
+| scss                                                     |          3 |     12,193 |         81 |      1,098 |     13,372 |
++----------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                 | language   | code       | comment    | blank      | total      |
++----------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Env\Workspace\ARCADIA\Index.html                      | HTML       |        183 |         13 |         17 |        213 |
+| c:\Env\Workspace\ARCADIA\README.md                       | Markdown   |         23 |          0 |         16 |         39 |
+| c:\Env\Workspace\ARCADIA\Router\Route.js                 | JavaScript |          9 |          0 |          1 |         10 |
+| c:\Env\Workspace\ARCADIA\Router\allRoutes.js             | JavaScript |         62 |          9 |          4 |         75 |
+| c:\Env\Workspace\ARCADIA\Router\router.js                | JavaScript |         52 |         20 |         21 |         93 |
+| c:\Env\Workspace\ARCADIA\js\auth\signin.js               | JavaScript |         19 |          1 |          5 |         25 |
+| c:\Env\Workspace\ARCADIA\js\auth\signup.js               | JavaScript |         76 |          3 |          9 |         88 |
+| c:\Env\Workspace\ARCADIA\js\modal.js                     | JavaScript |         22 |          2 |          4 |         28 |
+| c:\Env\Workspace\ARCADIA\js\script.js                    | JavaScript |        118 |         14 |         21 |        153 |
+| c:\Env\Workspace\ARCADIA\package-lock.json               | JSON       |         59 |          0 |          1 |         60 |
+| c:\Env\Workspace\ARCADIA\package.json                    | JSON       |          6 |          0 |          1 |          7 |
+| c:\Env\Workspace\ARCADIA\pages\404.html                  | HTML       |          5 |          0 |          1 |          6 |
+| c:\Env\Workspace\ARCADIA\pages\animaux.html              | HTML       |        169 |          2 |          4 |        175 |
+| c:\Env\Workspace\ARCADIA\pages\engagement.html           | HTML       |         58 |          0 |          2 |         60 |
+| c:\Env\Workspace\ARCADIA\pages\habitats.html             | HTML       |         98 |          0 |          3 |        101 |
+| c:\Env\Workspace\ARCADIA\pages\home.html                 | HTML       |        137 |          7 |          8 |        152 |
+| c:\Env\Workspace\ARCADIA\pages\reservations\allResa.html | HTML       |         22 |          0 |          2 |         24 |
+| c:\Env\Workspace\ARCADIA\pages\reserver.html             | HTML       |         46 |          0 |          2 |         48 |
+| c:\Env\Workspace\ARCADIA\pages\services.html             | HTML       |         63 |          3 |          4 |         70 |
+| c:\Env\Workspace\ARCADIA\scss\_custom.scss               | SCSS       |          8 |          4 |          6 |         18 |
+| c:\Env\Workspace\ARCADIA\scss\main.css                   | CSS        |     11,616 |         50 |        985 |     12,651 |
+| c:\Env\Workspace\ARCADIA\scss\main.scss                  | SCSS       |        569 |         27 |        107 |        703 |
+| Total                                                    |            |     13,420 |        155 |      1,224 |     14,799 |
++----------------------------------------------------------+------------+------------+------------+------------+------------+
