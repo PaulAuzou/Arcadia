@@ -11,162 +11,102 @@
   <div class="hero-image"></div>
 </section>
 
-<div class="container">
-  <div class="text-center">
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#EditionPhotoModal"
-    >
-      Ajouter une photo
-    </button>
-  </div>
-  <div class="row row-cols-2 row-cols-lg-3">
-    <div class="col p-3">
-      <div class="image-card text-white">
-        <img src="/Images/cheetah-4939765_1280.jpg" class="rounded w-100" />
-        <p class="titre-image">Audrey</p>
-        <div class="action-image-buttons" data-show="admin">
-          <button
-            type="button"
-            class="btn btn-outline-light"
-            data-bs-toggle="modal"
-            data-bs-target="#EditionPhotoModal"
-          >
-            <i class="bi bi-pencil"></i>
-          </button>
-          <button
-            type="button"
-            class="btn btn-outline-light"
-            data-bs-toggle="modal"
-            data-bs-target="#DeletePhotoModal"
-          >
-            <i class="bi bi-trash"></i>
-          </button>
+<div class="container my-4">
+  <div class="row">
+    <div class="col-md-4">
+      <h2>La Savane</h2>
+      <div class="row" id="savane">
+        <div class="card">
+          <img src="/Images/lion-515028.jpg" alt="Lion" />
+          <div class="card-body">
+            <h5 class="card-title">William</h5>
+            <p class="card-text">Lion</p>
+            <div class="vet-info">
+              <p><strong>État :</strong> En bonne santé</p>
+              <p><strong>Nourriture :</strong> Viande</p>
+              <p><strong>Grammage :</strong> 5kg</p>
+              <p><strong>Date de passage :</strong> 14/02/2025</p>
+              <p><strong>Détails :</strong> Très actif aujourd'hui</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="/Images/elephant-5146752.jpg" alt="Éléphant" />
+          <div class="card-body">
+            <h5 class="card-title">Dwayne</h5>
+            <p class="card-text">Éléphant</p>
+            <div class="vet-info">
+              <p><strong>État :</strong> Bonne condition</p>
+              <p><strong>Nourriture :</strong> Fruits et foin</p>
+              <p><strong>Grammage :</strong> 10kg</p>
+              <p><strong>Date de passage :</strong> 14/02/2025</p>
+              <p><strong>Détails :</strong> Très sociable</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col p-3">
-      <div class="image-card text-white">
-        <img src="/Images/reptile-3555792_1280.jpg" class="rounded w-100" />
-        <p class="titre-image">Bobby</p>
-      </div>
-    </div>
-    <div class="col p-3">
-      <div class="image-card text-white">
-        <img
-          src="/Images/redtail-hawk-6532079_1280.jpg"
-          class="rounded w-100"
-        />
-        <p class="titre-image">Josie</p>
-      </div>
-    </div>
-    <div class="col p-3">
-      <div class="image-card text-white">
-        <img src="/Images/monkey-3703230_1280.jpg" class="rounded w-100" />
-        <p class="titre-image">Fred</p>
-      </div>
-    </div>
-    <div class="col p-3">
-      <div class="image-card text-white">
-        <img src="/Images/monkey-3586621_1280.jpg" class="rounded w-100" />
-        <p class="titre-image">Leland</p>
-      </div>
-    </div>
-    <div class="col p-3">
-      <div class="image-card text-white">
-        <img src="/Images/lions-1660044_1280.jpg" class="rounded w-100" />
-        <p class="titre-image">Dale & Harry</p>
-      </div>
-    </div>
-  </div>
 
-  <!-- Modal -->
-  <div
-    class="modal fade"
-    id="EditionPhotoModal"
-    tabindex="-1"
-    aria-labelledby="EditionPhotoModalLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title fs-5" id="PhotoModalLabel">Edition Photo</h2>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
+    <div class="col-md-4">
+      <h2>La Jungle</h2>
+      <div class="row" id="jungle">
+        <div class="card">
+          <img src="/Images/tiger-1868911.jpg" alt="Tigre" />
+          <div class="card-body">
+            <h5 class="card-title">Jonesy</h5>
+            <p class="card-text">Tigre</p>
+            <div class="vet-info">
+              <p><strong>État :</strong> Vigoureux</p>
+              <p><strong>Nourriture :</strong> Viande</p>
+              <p><strong>Grammage :</strong> 4.5kg</p>
+              <p><strong>Date de passage :</strong> 14/02/2025</p>
+            </div>
+          </div>
         </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="NamePhotoInput" class="form-label">Titre</label>
-              <input
-                type="text"
-                class="form-control"
-                id="EmailInput"
-                placeholder="Singes"
-                name="Email"
-              />
+        <div class="card">
+          <img src="/Images/monkey-3586621_1280.jpg" alt="Singe" />
+          <div class="card-body">
+            <h5 class="card-title">Carter</h5>
+            <p class="card-text">Gorille</p>
+            <div class="vet-info">
+              <p><strong>État :</strong> Bonne forme</p>
+              <p><strong>Nourriture :</strong> Fruits Frais</p>
+              <p><strong>Grammage :</strong> 2kg</p>
+              <p><strong>Date de passage :</strong> 14/02/2025</p>
             </div>
-            <div class="mb-3">
-              <label for="ImageInput" class="form-label">Image</label>
-              <input type="file" class="form-control" id="ImageInput" />
-            </div>
-            <div class="text-center">
-              <button type="button" class="btn btn-primary">Enregistrer</button>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Modal Suppression -->
-  <div
-    class="modal fade"
-    id="DeletePhotoModal"
-    tabindex="-1"
-    aria-labelledby="DeletePhotoModalLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title fs-5" id="DeletePhotoModalLabel">
-            Êtes-vous sûr de vouloir supprimer cette photo ?
-          </h2>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
+    <div class="col-md-4">
+      <h2>Le Marais</h2>
+      <div class="row" id="marais">
+        <div class="card">
+          <img src="/Images/crocodile-1851313.jpg" alt="Crocodile" />
+          <div class="card-body">
+            <h5 class="card-title">Xeno</h5>
+            <p class="card-text">Crocodile</p>
+            <div class="vet-info">
+              <p><strong>État :</strong> Normal</p>
+              <p><strong>Nourriture :</strong> Poisson</p>
+              <p><strong>Grammage :</strong> 3kg</p>
+              <p><strong>Date de passage :</strong> 14/02/2025</p>
+            </div>
+          </div>
         </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <p>Titre</p>
-              <img
-                src="../Images/bowl-1850039_1280.jpg"
-                class="rounded w-100"
-              />
+        <div class="card">
+          <img src="/Images/otter-7868090.jpg" alt="Loutre" />
+          <div class="card-body">
+            <h5 class="card-title">Newt</h5>
+            <p class="card-text">Loutre</p>
+            <div class="vet-info">
+              <p><strong>État :</strong> Alerte</p>
+              <p><strong>Nourriture :</strong> Poissons</p>
+              <p><strong>Grammage :</strong> 1.5kg</p>
+              <p><strong>Date de passage :</strong> 14/02/2025</p>
             </div>
-            <div class="text-center">
-              <button type="button" class="btn btn-danger">Supprimer</button>
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Annuler
-              </button>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>

@@ -12450,7 +12450,7 @@ p {
 .hero-section-services {
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 40vh;
   background-color: #251f47; /* Couleur de fond sombre */
   display: flex;
   align-items: center;
@@ -12554,6 +12554,16 @@ p {
 
 .btn-primary:hover {
   background-color: var(--secondary);
+}
+
+.card-services {
+  cursor: pointer;
+  transition: transform 0.2s;
+  border-radius: 10px;
+}
+
+.card-services:hover {
+  transform: scale(1.05);
 }
 
 /* Page Reservation */

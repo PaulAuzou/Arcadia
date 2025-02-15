@@ -10,60 +10,140 @@
   <div class="hero-image-services"></div>
 </section>
 
-<div class="container my-5">
+<div class="container mt-5">
   <div class="row g-4">
     <!-- Carte Restauration -->
     <div class="col-md-4">
-      <div class="card custom-card">
+      <div
+        class="card-services"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRestauration"
+      >
         <img
           src="/Images/restaurant.jpg.webp"
           class="card-img-top"
           alt="Restauration"
         />
-        <div class="card-body">
-          <h5 class="card-title">Restauration</h5>
-          <p class="card-text">
-            Savourez une cuisine délicieuse dans nos restaurants tout en
-            profitant de la vue sur la nature.
+        <div class="card-services-body">
+          <h5 class="card-services-title">Restauration</h5>
+          <p class="card-services-text">
+            Savourez une cuisine délicieuse en pleine nature.
           </p>
         </div>
       </div>
     </div>
 
-    <!-- Carte Visite des Habitats -->
+    <!-- Carte Visite guidée -->
     <div class="col-md-4">
-      <div class="card custom-card">
+      <div
+        class="card-services"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasVisite"
+      >
         <img
           src="/Images/visite-guidee.jpg"
           class="card-img-top"
-          alt="Visite des Habitats"
+          alt="Visite guidée"
         />
-        <div class="card-body">
-          <h5 class="card-title">Visite guidée des Habitats</h5>
-          <p class="card-text">
-            Découvrez des espaces naturels reconstitués pour observer les
-            animaux dans leur environnement.
+        <div class="card-services-body">
+          <h5 class="card-sservices-title">Visite guidée des Habitats</h5>
+          <p class="card-services-text">
+            Découvrez les animaux dans leur environnement naturel.
           </p>
         </div>
       </div>
     </div>
 
-    <!-- Carte Visite en Petit Train -->
+    <!-- Carte Petit Train -->
     <div class="col-md-4">
-      <div class="card custom-card">
+      <div
+        class="card-services"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasTrain"
+      >
         <img
           src="/Images/Safari-train-2.jpg"
           class="card-img-top"
-          alt="Visite en Petit Train"
+          alt="Petit Train"
         />
-        <div class="card-body">
-          <h5 class="card-title">Visite en Petit Train</h5>
-          <p class="card-text">
-            Profitez d’une balade en petit train pour explorer le parc d’une
-            manière originale et ludique.
+        <div class="card-services-body">
+          <h5 class="card-services-title">Visite en Petit Train</h5>
+          <p class="card-services-text">
+            Explorez le parc d’une manière originale et ludique.
           </p>
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<!-- Offcanvas Modals à droite -->
+<!-- Offcanvas Restauration -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRestauration">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Restauration</h5>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="offcanvas"
+    ></button>
+  </div>
+  <div class="offcanvas-body">
+    Le restaurant en pleine nature offre une expérience culinaire immersive,
+    entre gastronomie et aventure sauvage. Niché au milieu de paysages
+    luxuriants, cet établissement permet aux visiteurs de déguster des plats
+    inspirés des saveurs du monde tout en profitant d’une vue imprenable sur la
+    faune environnante. <br />
+    Avec une cuisine élaborée à partir de produits frais et locaux, le
+    restaurant d’Arcadia allie respect de l’environnement et plaisir des
+    papilles, pour une pause gourmande inoubliable en harmonie avec la nature.
+  </div>
+</div>
+
+<!-- Offcanvas Visite guidée -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasVisite">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Visite guidée des Habitats</h5>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="offcanvas"
+    ></button>
+  </div>
+  <div class="offcanvas-body">
+    la visite guidée gratuite offre une immersion captivante au cœur du monde
+    animal, accompagnée par un guide passionné et expert. À travers un parcours
+    soigneusement conçu, les visiteurs découvrent les secrets fascinants de la
+    faune et de la flore du parc, tout en profitant d’anecdotes surprenantes et
+    d’explications enrichissantes sur les différentes espèces. <br />Chaque
+    étape est une invitation à mieux comprendre la biodiversité et les efforts
+    de conservation du zoo. Accessible à tous, cette visite interactive permet
+    d’observer les animaux de plus près, d’assister à des moments privilégiés
+    comme les nourrissages et même de poser des questions au guide. Une
+    expérience ludique et éducative qui transforme la découverte du zoo en une
+    véritable aventure inoubliable !
+  </div>
+</div>
+
+<!-- Offcanvas Petit Train -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTrain">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Visite en Petit Train</h5>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="offcanvas"
+    ></button>
+  </div>
+  <div class="offcanvas-body">
+    À bord du petit train du zoo Arcadia, embarquez pour une aventure unique à
+    la découverte des merveilles du parc sans effort. Confortablement installés,
+    les visiteurs traversent les différents écosystèmes du zoo où évoluent des
+    espèces fascinantes. <br />Le trajet, ponctué de commentaires enrichissants,
+    permet d’en apprendre davantage sur les animaux, leur habitat et les actions
+    de conservation menées par le zoo. <br />Idéal pour les familles et les
+    explorateurs en quête d’une visite immersive et détendue, le petit train
+    offre des points de vue inédits et permet d’observer la faune au plus près,
+    tout en profitant d’un moment agréable et reposant au cœur de la nature.
   </div>
 </div>
