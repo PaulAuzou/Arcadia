@@ -1,6 +1,6 @@
 const habitats = {
   savane: {
-    title: "Bienvenue au coeur de la Savane",
+    title: "",
     images: [
       "/Images/savannah.jpg",
       "/images/savannah lion.jpg",
@@ -10,9 +10,9 @@ const habitats = {
       "Au cœur d'Arcadia, l’habitat Savane vous plonge dans l’immensité dorée des plaines africaines, où règnent en maîtres les emblématiques lions, éléphants et girafes. Sous le regard perçant du roi des animaux, les lions paressent à l’ombre des acacias ou se regroupent pour surveiller leur territoire. Non loin de là, les éléphants, majestueux et imposants, traversent les herbes hautes en famille, leurs trompes balayant le sol à la recherche de nourriture. Plus haut encore, les élégantes girafes tendent leur long cou vers la cime des arbres, broutant les feuilles avec une grâce fascinante. Ce décor vivant et immersif vous invite à observer ces créatures fascinantes dans un environnement soigneusement reconstitué, pour une expérience inoubliable au cœur de la savane.",
   },
   jungle: {
-    title: "La Jungle",
+    title: "",
     images: [
-      "/images/elephant-4006712_1920.jpg",
+      "/images/gorilla-7708352_1920.jpg",
       "/images/chameleon-384964_1920.jpg",
       "/images/animal-4458133_1920.jpg",
     ],
@@ -20,7 +20,7 @@ const habitats = {
       "L’habitat Jungle du zoo vous entraîne au cœur d’une forêt tropicale luxuriante, où la nature foisonne et les créatures règnent en maîtres. Parmi les feuillages denses et les lianes entrelacées, les tigres arpentent leur territoire avec une grâce silencieuse, leur pelage flamboyant contrastant avec l’ombre des sous-bois. Plus haut, dans la canopée bruissante, les gorilles veillent sur leur famille, scrutant les visiteurs avec une intelligence saisissante. Au sol comme dans l’eau, une incroyable diversité de reptiles évolue discrètement : serpents aux couleurs éclatantes, crocodiles immobiles à l’affût, et lézards furtifs se fondent dans le décor verdoyant. Cet écosystème fascinant vous plonge dans l’atmosphère mystérieuse et envoûtante de la jungle, où chaque recoin révèle un nouveau secret de la vie sauvage.",
   },
   marais: {
-    title: "Le Marais",
+    title: "",
     images: [
       "/Images/nile-crocodile-245013_1920.jpg",
       "/images/otter-7953030_1920.jpg",

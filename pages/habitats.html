@@ -56,11 +56,6 @@
   </div>
 </div>
 
-<div class="container text-center my-5 text-dark">
-  <h1>Bienvenue chez eux</h1>
-  <p>Découvrez leurs habitats fascinants</p>
-</div>
-
 <div class="container-habitats">
   <div class="row g-4">
     <div class="col-md-3 mx-auto">
@@ -70,7 +65,10 @@
         <div class="overlay">
           <h2>La Savane</h2>
           <p>Explorez l'habitat des lions, éléphants et girafes.</p>
-          <button class="btn btn-primary bg-dark" onclick="openModal('savane')">
+          <button
+            class="btn btn-primary bg-dark text-white"
+            onclick="openModal('savane')"
+          >
             Découvrir La Savane
           </button>
         </div>
@@ -83,7 +81,10 @@
         <div class="overlay">
           <h2>La Jungle</h2>
           <p>Découvrez les singes, tigres et reptiles.</p>
-          <button class="btn btn-primary bg-dark" onclick="openModal('jungle')">
+          <button
+            class="btn btn-primary bg-dark text-white"
+            onclick="openModal('jungle')"
+          >
             Découvrir La Jungle
           </button>
         </div>
@@ -96,7 +97,10 @@
         <div class="overlay">
           <h2>Le Marais</h2>
           <p>Observez les crocodiles, grenouilles et loutres.</p>
-          <button class="btn btn-primary bg-dark" onclick="openModal('marais')">
+          <button
+            class="btn btn-primary bg-dark text-white"
+            onclick="openModal('marais')"
+          >
             Découvrir Le Marais
           </button>
         </div>
@@ -105,17 +109,13 @@
   </div>
 </div>
 
-<div class="modal fade" id="habitatModal" tabindex="-1" aria-hidden="true">
+<div class="modal fade" id="habitatModal" tabindex="0" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modalTitle">Découvrez l'habitat</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
+        <h5 class="modal-title text-white" id="modalTitle">
+          Découvrez l'habitat
+        </h5>
       </div>
       <div class="modal-body">
         <div
@@ -141,7 +141,10 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
           </button>
         </div>
-        <div class="description text-center" id="modalDescription"></div>
+        <div
+          class="description text-left bg-black text-white p-3"
+          id="modalDescription"
+        ></div>
       </div>
     </div>
   </div>

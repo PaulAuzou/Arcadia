@@ -12382,11 +12382,16 @@ p {
   justify-content: flex-end;
   align-items: center;
   height: 100vh;
-  background: url("/Images/tiger-3424791_1280.jpg") no-repeat center center/cover;
+  background: url("/Images/tiger-3264048.jpg") no-repeat center center/cover;
   padding: 20px;
 }
 
+.row {
+  padding-top: 50px;
+}
+
 .habitat-card {
+  height: 450px;
   text-align: center;
   padding: 20px;
   border-radius: 10px;
@@ -12662,7 +12667,7 @@ p {
   background: #343a40;
   color: white;
   border-radius: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 /* Responsive */
