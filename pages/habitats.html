@@ -70,7 +70,9 @@
         <div class="overlay">
           <h2>La Savane</h2>
           <p>Explorez l'habitat des lions, éléphants et girafes.</p>
-          <a href="#" class="btn btn-dark">Découvrir</a>
+          <button class="btn btn-primary bg-dark" onclick="openModal('savane')">
+            Découvrir La Savane
+          </button>
         </div>
       </div>
     </div>
@@ -80,8 +82,10 @@
       >
         <div class="overlay">
           <h2>La Jungle</h2>
-          <p>Découvrez les singes, jaguars et oiseaux exotiques.</p>
-          <a href="#" class="btn btn-dark">Découvrir</a>
+          <p>Découvrez les singes, tigres et reptiles.</p>
+          <button class="btn btn-primary bg-dark" onclick="openModal('jungle')">
+            Découvrir La Jungle
+          </button>
         </div>
       </div>
     </div>
@@ -91,10 +95,56 @@
       >
         <div class="overlay">
           <h2>Le Marais</h2>
-          <p>Observez les crocodiles, grenouilles et tortues.</p>
-          <a href="#" class="btn btn-dark">Découvrir</a>
+          <p>Observez les crocodiles, grenouilles et loutres.</p>
+          <button class="btn btn-primary bg-dark" onclick="openModal('marais')">
+            Découvrir Le Marais
+          </button>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="habitatModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitle">Découvrez l'habitat</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div
+          id="carouselExample"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner" id="carouselContent"></div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="description text-center" id="modalDescription"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/js/habitats.js"></script>

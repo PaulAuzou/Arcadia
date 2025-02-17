@@ -17,30 +17,134 @@
       <h2>La Savane</h2>
       <div class="row" id="savane">
         <div class="card">
-          <img src="/Images/lion-515028.jpg" alt="Lion" />
+          <img
+            src="/Images/lion-515028.jpg"
+            id="lion-img"
+            class="card-img-top clickable"
+            onclick="showImagePopup('lion')"
+          />
           <div class="card-body">
-            <h5 class="card-title">William</h5>
-            <p class="card-text">Lion</p>
-            <div class="vet-info">
-              <p><strong>État :</strong> En bonne santé</p>
-              <p><strong>Nourriture :</strong> Viande</p>
-              <p><strong>Grammage :</strong> 5kg</p>
-              <p><strong>Date de passage :</strong> 14/02/2025</p>
-              <p><strong>Détails :</strong> Très actif aujourd'hui</p>
+            <p>Prénom</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="William"
+              disabled
+            />
+            <p>Espèce</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="Lion"
+              disabled
+            />
+            <p>Etat</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="En bonne santé"
+              disabled
+            />
+            <p>Type de nourriture</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="Viande"
+              disabled
+            />
+            <p>Grammage</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="5 kgs"
+              disabled
+            />
+            <p>Condition</p>
+            <textarea class="form-control mb-2" disabled>
+Très actif aujourd'hui</textarea
+            >
+            <p>Dernier passage vétérinaire</p>
+            <input type="date" class="form-control mb-2" />
+            <div id="admin-controls-lion" style="display: none">
+              <button
+                class="btn btn-warning"
+                onclick="enableEditing('lion-card')"
+              >
+                Modifier
+              </button>
+              <button
+                class="btn btn-success"
+                onclick="saveChanges('lion-card')"
+              >
+                Enregistrer
+              </button>
             </div>
           </div>
         </div>
+
         <div class="card">
-          <img src="/Images/elephant-5146752.jpg" alt="Éléphant" />
+          <img
+            src="/Images/elephant-5146752.jpg"
+            id="elephant-img"
+            class="card-img-top clickable"
+            onclick="showImagePopup('elephant')"
+            alt="Éléphant"
+          />
           <div class="card-body">
-            <h5 class="card-title">Dwayne</h5>
-            <p class="card-text">Éléphant</p>
-            <div class="vet-info">
-              <p><strong>État :</strong> Bonne condition</p>
-              <p><strong>Nourriture :</strong> Fruits et foin</p>
-              <p><strong>Grammage :</strong> 10kg</p>
-              <p><strong>Date de passage :</strong> 14/02/2025</p>
-              <p><strong>Détails :</strong> Très sociable</p>
+            <p>Prénom</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="Dwayne"
+              disabled
+            />
+            <p>Espèce</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="Eléphant"
+              disabled
+            />
+            <p>Etat</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="Bonne condition"
+              disabled
+            />
+            <p>Type de nourriture</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="Fruits & Foin"
+              disabled
+            />
+            <p>Grammage</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="10 kgs"
+              disabled
+            />
+            <p>Condition</p>
+            <textarea class="form-control mb-2" disabled>
+Très sociable</textarea
+            >
+            <p>Dernier passage vétérinaire</p>
+            <input type="date" class="form-control mb-2" />
+            <div id="admin-controls-elephant" style="display: none">
+              <button
+                class="btn btn-warning"
+                onclick="enableEditing('elephant-card')"
+              >
+                Modifier
+              </button>
+              <button
+                class="btn btn-success"
+                onclick="saveChanges('elephant-card')"
+              >
+                Enregistrer
+              </button>
             </div>
           </div>
         </div>
@@ -51,28 +155,134 @@
       <h2>La Jungle</h2>
       <div class="row" id="jungle">
         <div class="card">
-          <img src="/Images/tiger-1868911.jpg" alt="Tigre" />
+          <img
+            src="/Images/tiger-1868911.jpg"
+            id="tigre-img"
+            class="card-img-top clickable"
+            onclick="showImagePopup('tigre')"
+            alt="Tigre"
+          />
           <div class="card-body">
-            <h5 class="card-title">Jonesy</h5>
-            <p class="card-text">Tigre</p>
-            <div class="vet-info">
-              <p><strong>État :</strong> Vigoureux</p>
-              <p><strong>Nourriture :</strong> Viande</p>
-              <p><strong>Grammage :</strong> 4.5kg</p>
-              <p><strong>Date de passage :</strong> 14/02/2025</p>
+            <p>Prénom</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="Jonesy"
+              disabled
+            />
+            <p>Espèce</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="Tigre"
+              disabled
+            />
+            <p>Etat</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="Très Vigoureux"
+              disabled
+            />
+            <p>Type de nourriture</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="Viande"
+              disabled
+            />
+            <p>Grammage</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="2.5 kgs"
+              disabled
+            />
+            <p>Condition</p>
+            <textarea class="form-control mb-2" disabled>
+Très sociable</textarea
+            >
+            <p>Dernier passage vétérinaire</p>
+            <input type="date" class="form-control mb-2" />
+            <div id="admin-controls-tigre" style="display: none">
+              <button
+                class="btn btn-warning"
+                onclick="enableEditing('tigre-card')"
+              >
+                Modifier
+              </button>
+              <button
+                class="btn btn-success"
+                onclick="saveChanges('tigre-card')"
+              >
+                Enregistrer
+              </button>
             </div>
           </div>
         </div>
         <div class="card">
-          <img src="/Images/monkey-3586621_1280.jpg" alt="Singe" />
+          <img
+            src="/Images/monkey-3586621_1280.jpg"
+            id="gorille-img"
+            class="card-img-top clickable"
+            onclick="showImagePopup('gorille')"
+            alt="Singe"
+          />
           <div class="card-body">
-            <h5 class="card-title">Carter</h5>
-            <p class="card-text">Gorille</p>
-            <div class="vet-info">
-              <p><strong>État :</strong> Bonne forme</p>
-              <p><strong>Nourriture :</strong> Fruits Frais</p>
-              <p><strong>Grammage :</strong> 2kg</p>
-              <p><strong>Date de passage :</strong> 14/02/2025</p>
+            <p>Prénom</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="Carter"
+              disabled
+            />
+            <p>Espèce</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="Gorille"
+              disabled
+            />
+            <p>Etat</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="Bonne forme"
+              disabled
+            />
+            <p>Type de nourriture</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="Fruits Frais"
+              disabled
+            />
+            <p>Grammage</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="2 kgs"
+              disabled
+            />
+            <p>Condition</p>
+            <textarea class="form-control mb-2" disabled>
+Très sociable</textarea
+            >
+            <p>Dernier passage vétérinaire</p>
+            <input type="date" class="form-control mb-2" />
+            <div id="admin-controls-gorille" style="display: none">
+              <button
+                class="btn btn-warning"
+                onclick="enableEditing('gorille-card')"
+              >
+                Modifier
+              </button>
+              <button
+                class="btn btn-success"
+                onclick="saveChanges('gorille-card')"
+              >
+                Enregistrer
+              </button>
             </div>
           </div>
         </div>
@@ -83,28 +293,134 @@
       <h2>Le Marais</h2>
       <div class="row" id="marais">
         <div class="card">
-          <img src="/Images/crocodile-1851313.jpg" alt="Crocodile" />
+          <img
+            src="/Images/crocodile-1851313.jpg"
+            id="crocodile-img"
+            class="card-img-top clickable"
+            onclick="showImagePopup('crocodile')"
+            alt="Crocodile"
+          />
           <div class="card-body">
-            <h5 class="card-title">Xeno</h5>
-            <p class="card-text">Crocodile</p>
-            <div class="vet-info">
-              <p><strong>État :</strong> Normal</p>
-              <p><strong>Nourriture :</strong> Poisson</p>
-              <p><strong>Grammage :</strong> 3kg</p>
-              <p><strong>Date de passage :</strong> 14/02/2025</p>
+            <p>Prénom</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="Xeno"
+              disabled
+            />
+            <p>Espèce</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="Crocodile"
+              disabled
+            />
+            <p>Etat</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="Normal"
+              disabled
+            />
+            <p>Type de nourriture</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="Poisson"
+              disabled
+            />
+            <p>Grammage</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="3 kgs"
+              disabled
+            />
+            <p>Condition</p>
+            <textarea class="form-control mb-2" disabled>
+Très sociable</textarea
+            >
+            <p>Dernier passage vétérinaire</p>
+            <input type="date" class="form-control mb-2" />
+            <div id="admin-controls-crocodile" style="display: none">
+              <button
+                class="btn btn-warning"
+                onclick="enableEditing('crocodile-card')"
+              >
+                Modifier
+              </button>
+              <button
+                class="btn btn-success"
+                onclick="saveChanges('crocodile-card')"
+              >
+                Enregistrer
+              </button>
             </div>
           </div>
         </div>
         <div class="card">
-          <img src="/Images/otter-7868090.jpg" alt="Loutre" />
+          <img
+            src="/Images/otter-7868090.jpg"
+            id="loutre-img"
+            class="card-img-top clickable"
+            onclick="showImagePopup('loutre')"
+            alt="Loutre"
+          />
           <div class="card-body">
-            <h5 class="card-title">Newt</h5>
-            <p class="card-text">Loutre</p>
-            <div class="vet-info">
-              <p><strong>État :</strong> Alerte</p>
-              <p><strong>Nourriture :</strong> Poissons</p>
-              <p><strong>Grammage :</strong> 1.5kg</p>
-              <p><strong>Date de passage :</strong> 14/02/2025</p>
+            <p>Prénom</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="Newt"
+              disabled
+            />
+            <p>Espèce</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="Loutre"
+              disabled
+            />
+            <p>Etat</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="Alerte"
+              disabled
+            />
+            <p>Type de nourriture</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="Poissons"
+              disabled
+            />
+            <p>Grammage</p>
+            <input
+              type="text"
+              class="form-control mb-2"
+              value="1.5 kgs"
+              disabled
+            />
+            <p>Condition</p>
+            <textarea class="form-control mb-2" disabled>
+Très sociable</textarea
+            >
+            <p>Dernier passage vétérinaire</p>
+            <input type="date" class="form-control mb-2" />
+            <div id="admin-controls-crocodile" style="display: none">
+              <button
+                class="btn btn-warning"
+                onclick="enableEditing('loutre-card')"
+              >
+                Modifier
+              </button>
+              <button
+                class="btn btn-success"
+                onclick="saveChanges('loutre-card')"
+              >
+                Enregistrer
+              </button>
             </div>
           </div>
         </div>
@@ -112,3 +428,12 @@
     </div>
   </div>
 </div>
+
+<div id="image-popup" style="display: none">
+  <img id="popup-image" src="" style="max-width: 100%; max-height: 80vh" />
+  <div class="view-counter" id="viewCounter">0 Vues</div>
+  <p id="popup-description" class="text-white"></p>
+  <button class="btn btn-dark" onclick="closePopup()">Fermer</button>
+</div>
+
+<script src="js/animaux.js"></script>
